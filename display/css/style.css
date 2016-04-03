@@ -428,10 +428,12 @@ footer ul li a:hover{
 }
 .works ul li a:hover .hover{
     cursor: pointer;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
     visibility: visible;
     opacity: 1;
+    width: 97px;
+    height: 97px;
     transition: all .7s ease-in-out;
     -webkit-transition: all .7s ease-in-out;
     -moz-transition:  all .7s ease-in-out;
@@ -439,8 +441,8 @@ footer ul li a:hover{
     -o-transition:  all .7s ease-in-out;
 }
 .works ul li a .hover{
-    width: 97px;
-    height: 97px;
+    width: 30px;
+    height: 30px;
     transition: none;
     opacity: 0;
     z-index: 7;
