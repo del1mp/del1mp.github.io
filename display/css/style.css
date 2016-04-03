@@ -420,9 +420,9 @@ footer ul li a:hover{
 }
 .works ul li a:hover img{
     opacity: 1;
-     -webkit-transform: scale(2);
-     -moz-transform: scale(2);
-    -o-transform: scale(2);
+     -webkit-transform: scale(1.4);
+     -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
      z-index: 5;
      cursor: default;
 }
