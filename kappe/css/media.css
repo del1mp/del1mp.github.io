@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1024px){
+    content .projects a{
+    width: 50%;
+}
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        max-width: 85px;
+    }
+    content{
+    width: calc(100% - 85px);
+    }
+    .logo{
+        padding: 12px 0px 12px 30px;
+    }
+    .logo h1:first-child{
+        display: none;
+    }
+     .logo img{
+        margin-left: 0;
+        vertical-align: top;
+        position: relative;
+        right: 48%;
+     }
+    .logo h1:nth-child(2){
+        display: block;
+    }
+    header nav ul li a .fa{
+    display: inline-block;
+    font-size: 18px;
+    }
+    header nav ul li a span{
+    display: none;
+    }
+     header nav ul li a{
+    padding-right: 0; 
+    }
+    header nav ul li{
+        text-align: center;
+    }
+    header .social-network span{
+        display: none;
+    }
+    header .social-network .web{
+        float: none;
+        text-align: center;
+    }
+    header .social-network{
+        padding-right: 0;
+    }
+
+    header .social-network .web a{
+        display: block;
+        padding-left: 0;
+        margin-bottom: 7px;
+    }
+    header .filter ul li{
+        padding: 2px 10px;
+
+        text-align: center;
+    }
+     header .filter ul li span{
+        font-size: 0;
+     }
+     header .filter ul li span .fa{
+        font-size: 18px;
+     }
+     header .filter ul li a span{
+        display: block;
+     }
+     header .filter ul li a{
+       
+     }
+      header .filter ul li a span{
+        font-size: 14px;
+      }
+}
+
+
+@media only screen and (max-width: 480px){
+    content .projects a{
+    width: 100%;
+}
+}
