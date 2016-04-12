@@ -5,24 +5,23 @@ $(document).ready(function(){
 			var height = $('.wrapper').height();
 			$('header').css('height',height+'px');
 		}
-
 	}
-
 	$(window).resize(ecvalheight);
+	ecvalheight();
+	$(window).load(ecvalheight);
+	ecvalheight();
+	$(document).ready(ecvalheight);
 	ecvalheight();
 });
 
 $(document).ready(function(){
 	function ecvalheight(e){
-
 		if ($('iframe').height() < $('.wrapper').height()){
 			var height = $('.wrapper').height();
-
 			$('iframe').css('height',height+'px');
 		}
 
 	}
-
 	$(window).resize(ecvalheight);
 	ecvalheight();
 });
