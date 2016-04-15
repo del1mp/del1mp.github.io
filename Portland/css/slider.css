@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://allfont.ru/allfont.css?fonts=montserrat-black);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+section.slider h2{
+    margin: 0;     
+    color: #fff;   
+    font-size: 42px;
+    font-family: "montserrat black", sans-serif; 
+    font-weight: 700;   
+    margin-bottom: 35px;
+}
+section.slider .text{
+	vertical-align: top;
+	margin-top: 104px;
+	display: inline-block;
+	margin-left: 10%;
+	width: 34%;
+}
+section.slider .text span{
+	display: block;
+	font-family: 'Crimson Text', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+section.slider .text a.buy{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	background: #2754eb;
+	border-radius: 20px;
+	padding: 15px 52px;
+	margin-top: 62px;
+	border: 1px solid #2754eb;
+	font-size: 11px;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+section.slider .text a.buy:hover{
+	background: transparent;
+	border: 1px solid #2754eb;
+}
+section.slider{
+	background: #1c1e23;
+}
+.item{
+    background: #1c1e23;    
+    /*text-align: center;*/
+    height: auto;
+}
+section.slider .carousel-inner>.item>a>, section.slider .carousel-inner>.item>{
+	text-align: center;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	display: inline-block;
+	margin-left: 13%;
+
+}
+section.slider .carousel-control.right {
+top: 45%;
+bottom: 45%;
+}
+section.slider .carousel-control {
+	background: url(../img/Next-Icon.png) no-repeat top;
+	opacity: 1;
+	color: transparent;
+	text-shadow: none;
+	background-color: none;
+}
+section.slider .carousel-control:hover {
+	color: #1c1e23;
+}
