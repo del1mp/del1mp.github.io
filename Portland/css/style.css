@@ -256,23 +256,26 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
 }
-.left-menu ul li:hover {
-	cursor: pointer;
+.left-menu ul.hid-menu li:hover{
 	background: #343e5c;
 }
-.left-menu ul li:hover a{
+.left-menu ul.hid-menu li:hover a{
 	color: #e4e5e7;
 }
-.left-menu ul li ul.hi-tech li, .left-menu ul li ul.brand-focus li, .left-menu ul li ul.top-sales li, .left-menu ul li ul.home li, .left-menu ul li ul.top-sales li, .left-menu ul li ul.sale li{
-	background: #f0f2f7;
-}
-.left-menu ul li ul.hi-tech li a, .left-menu ul li ul.brand-focus a, .left-menu ul li ul.top-sales a, .left-menu ul li ul.home a, .left-menu ul li ul.top-sales li, .left-menu ul li ul.sale a{
+.left-menu ul.hid-menu li:hover ul li a{
 	color: #a1a7bd;
 }
-.left-menu ul li ul.hi-tech li:hover a, .left-menu ul li ul.brand-focus li:hover a, .left-menu ul li ul.top-sales li:hover a, .left-menu ul li ul.home li:hover a, .left-menu ul li ul.sale li:hover a{
+.left-menu ul.hid-menu li ul li{
+	background: #f0f2f7;
+}
+.left-menu ul.hid-menu li ul li a{
+	color: #a1a7bd;
+}
+.left-menu ul.hid-menu li ul li:hover a{
 	background: #a1a7bd;
 	color: #fff;
 }
+
 .hid{
 	cursor: pointer;
 }
@@ -283,6 +286,7 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 	width: 100%;
 }
 .lot{
+	position: relative;
 	max-height: 382px;
 	margin-bottom: 30px;
 	border-radius: 5px;
@@ -294,6 +298,46 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 	-ms-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
+}
+.lot span.buy-now{
+		-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	opacity: 0;
+	z-index: 5;
+position: absolute;
+background:rgba(255,140,56,1);
+display: block;
+
+bottom: 0%;
+left: 0%;
+right: 0;
+text-transform: uppercase;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+}
+.lot span.buy-now a{
+	padding: 10px 32px;
+	color: #fff;
+	display: inline-block;
+}
+.lot:hover span.buy-now{
+	opacity: 1;
+}
+.lot span.buy-now:hover{
+	background: rgba(255,255,255,1);
+	border-top: 1px solid rgba(255,140,56,1);
+		border-bottom: 1px solid rgba(255,140,56,1);
+}
+.lot span.buy-now:hover a{
+	color: rgba(255,140,56,1);
 }
 .lot h6, .last-lot h6{
 	font-size: 16px;
@@ -526,9 +570,13 @@ section.content .available:last-child form input[type="radio"] + label:last-chil
 	position: absolute;
 }
 .last-lot {
+	overflow: hidden;
 	position: relative;
 	max-height: 382px;
 	padding: 0;
+}
+.margin-bottom{
+	margin-bottom: 200px;
 }
 section.content .pages{
 	margin-bottom: 50px;

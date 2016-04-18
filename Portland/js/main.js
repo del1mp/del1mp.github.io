@@ -56,34 +56,12 @@
 //     });
 // });
 $(document).ready(function(){
-    $(".hi").click(function(){
-        $(".hi-tech").collapse('toggle');
-    });
-});
-$(document).ready(function(){
-    $(".brand").click(function(){
-        $(".brand-focus").collapse('toggle');
-    });
-});
-$(document).ready(function(){
-    $(".sales").click(function(){
-        $(".top-sales").collapse('toggle');
-    });
-});
-$(document).ready(function(){
-    $(".hom").click(function(){
-        $(".home").collapse('toggle');
-    });
-});
-$(document).ready(function(){
-    $(".sel").click(function(){
-        $(".sale").collapse('toggle');
-    });
-});
-$(document).ready(function(){
-    $(".hid").click(function(){
-        $(".hid-menu").collapse('toggle');
-    });
+	$("ul.hid-menu li ul").hide();
+	$("ul.hid-menu > li").click(function(){
+		$(this).children('ul').slideToggle()
+	});
 });
 
-
+$("ul.hid-menu > li > a").on('click', function(e) {
+    e.preventDefault();
+})
