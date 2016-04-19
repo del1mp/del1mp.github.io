@@ -56,12 +56,72 @@
 //     });
 // });
 $(document).ready(function(){
-	$("ul.hid-menu li ul").hide();
-	$("ul.hid-menu > li").click(function(){
-		$(this).children('ul').slideToggle()
+	// $("ul.hid-menu li ul").hide();
+	$("ul.hid-menu > li a").click(function(){
+		$(this).siblings('ul').toggleClass('active');
+		if ($(this).siblings('ul').is(':visible')) {
+			$(this).children('img').css('transform', 'rotate(90deg)');
+		}
+		else{
+			$(this).children('img').css('transform', 'rotate(0deg)');
+		}
+	});
+
+});
+$("ul.hid-menu a").on('click', function(e) {
+    e.preventDefault();
+})
+$(".lot a").on('click', function(e) {
+    e.preventDefault();
+})
+$(document).ready(function(){
+	$(".header-bottom-block").hide();
+	$(".click-menu > a").click(function(){
+		$(".header-bottom-block").slideToggle();
 	});
 });
 
-$("ul.hid-menu > li > a").on('click', function(e) {
-    e.preventDefault();
-})
+function Auto () {
+	
+        var availableTags = [];
+        	$('.lot h6').each(function (i){
+    availableTags[i]=$(this).text();
+	});
+ 
+        $( "#tablet" ).autocomplete({
+            source: availableTags
+
+        });
+    };
+    Auto();
+$(document).ready(function(){
+			var now = 0;
+	$(".lot span.buy-now a").click(function(e){
+            var tmp = $(this).parent().siblings("a").children("span.price").html(); 
+            tmp = parseFloat(tmp); 
+            now = parseFloat(now); 
+            now = tmp +now;
+            $('#sum').html(now); 
+            $('#sum2').html(now);
+        }); 
+	    $(window).scroll(function(){
+            var bo = $("body").scrollTop();
+ 
+            if ( bo > 200 ) { $(".shop").css("display", "block"); } else { $(".shop").css("display", "none"); };
+        })
+});
+
+
+
+
+    // function calculate(){ 
+    //     var tmp = 0; 
+    //     $('.price').each(function(all){ 
+    //         var now = $(this).html(); 
+    //         tmp = parseFloat(tmp); 
+    //         now = parseFloat(now); 
+    //         tmp = tmp+now; 
+    //         $('#sum').html(tmp); 
+    //     }); 
+    // } 
+    // calculate(); 
