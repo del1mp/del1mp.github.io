@@ -340,12 +340,12 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 		-ms-transition: all .4s ease-in-out;
 		-o-transition: all .4s ease-in-out;
 		transition: all .4s ease-in-out;
-		opacity: 0;
+		 opacity: 0; 
 		z-index: 5;
 		position: absolute;
-		background: rgba(39, 84, 235, 1);
+		background: rgba(39, 84, 235, 0.7);
 		display: block;
-		top: 87%;
+		top: 50%;
 		left: 8%;
 		right: 8%;
 		text-transform: uppercase;
@@ -356,7 +356,7 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 		transform: translateY(-50%);
 }
 .lot span.buy-now a{
-	padding: 20px;
+	padding: 13px;
 	color: #fff;
 	display: inline-block;
 }
@@ -364,7 +364,7 @@ section.content .sort .filter-menu input[type="checkbox"]:checked + label span {
 	opacity: 1;
 }
 .lot span.buy-now:hover{
-	background: rgba(255,140,56,1);
+	background: rgba(0,226,170,0.8);
 
 }
 .lot span.buy-now:hover a{

@@ -109,7 +109,10 @@ $(document).ready(function(){
  
             if ( bo > 200 ) { $(".shop").css("display", "block"); } else { $(".shop").css("display", "none"); };
         })
+      
+       
 });
+
 
 
 
