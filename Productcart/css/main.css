@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Titillium Web', sans-serif;	
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper{
+	position: relative;
+	text-align: center;
+	height: 100vh;
+	background: url(../bg.jpg) no-repeat center;
+	background-size: cover;
+}
+.content{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: left;
+	margin: auto;
+	display: inline-block;	
+	background: #fff;
+}
+.content{
+  box-shadow: 17px 17px 63px -12px #000000;
+}
+.content .product{
+	text-align: center;
+	padding: 93px 40px 24px 80px;
+}
+.content .logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.content .product a .fa{
+	padding: 0 10px;
+	color: #37474f;
+	font-size: 16px;
+	display: inline-block;
+}
+.content .product a:hover .fa{
+	color: #536dfe;
+}
+.content .product img{
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+a.next{
+	margin-top: 22px;
+	width: 18px;
+	height: 3px;
+	background: #d7d7d7;
+	display: inline-block;
+}
+a.next:hover{
+	background: #536dfe;
+}
+.content .product, .content .description{
+	display: inline-block;
+	vertical-align: top;
+}
+.content .description{
+	padding: 50px 38px 45px 40px; 
+}
+.content .description span{
+	color: #263238;
+}
+.content .description > span + span{
+	color: #536dfe;
+	font-weight: 600;
+	float: right;
+}
+
+.content .description h1{
+	font-weight: 400;
+	font-size: 29px;
+	color: #263238;
+	margin-bottom: 12px;
+}
+.content .description h2{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 24px;
+	color: #263238;
+}
+.content .description span.descr{
+	color: #646b6f;
+	font-size: 17px;
+}
+.content .description p{
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	line-height: 23px;
+	color: #263238;
+}
+.content .description .rating i{
+	margin-right: 4px;
+	float: right;
+	cursor: pointer;
+	font-size: 16px;
+	color: #c9c9c9;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.content .description .rating i:hover{
+	color: #fccf47;
+} 
+.content .description .rating i:nth-child(1):hover ~ i{
+	color: #fccf47;
+} 
+.content .description .rating i:nth-child(2):hover ~ i{
+	color: #fccf47;
+} 
+.content .description .rating i:nth-child(3):hover ~ i{
+	color: #fccf47;
+} 
+.content .description .rating i:nth-child(4):hover ~ i{
+	color: #fccf47;
+} 
+.content .description .rating{
+	float: left;
+}
+.content .description .clicks, .content .description .rating{
+	display: inline-block;
+}
+.content .description .clicks{
+	margin-left: 30px;
+	position: relative;
+	top: -4.5px;
+}
+.content .description .clicks span, .content .description .clicks{
+	font-size: 13px;
+	color: #656c6f;
+}
+.content .description .clicks span.rati{
+	font-size: 15px;
+	color: #f1425d;
+	display: inline-block;
+	margin-right: 4px;
+	font-weight: 600;
+}
+.content .description h2.price, .content .description .dollar{
+	display: inline-block;
+	font-size: 24px;
+	color: #f1425d;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+span.colors{
+	float: right;
+}
+span.black, span.gray{
+	cursor: pointer;
+	margin-top: 10px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border-radius: 50%;
+}
+span.black{
+	border: 2px solid #f0f;
+	margin-right: 20px;
+	background: #000;
+}
+span.gray{
+	background: #777;
+}
+input[type="number"]{
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	border: none;
+}
+form{
+	margin-top: 30px;
+}
+#addcart{
+	float: right;
+	background: #536dfe;
+	color: #fff;
+	border: none;
+	padding: 15px 40px; 
+	font-size: 16px;
+}
+.rating i span{
+	display: none;
+}
+.wrapper .content img.headphones-gray{
+	display: none;
+}
+#number::-webkit-inner-spin-button { 
+  opacity: 1;
+}
+input:focus{
+	outline: none;
+}
+.wrapper .content .description .discount{
+	color: #536dfe;
+	font-weight: 600;
+	display: inline-block;
+	margin-left: 6px;	
+}
+.wrapper .content .description h2.new-price{
+	display: inline-block;
+	margin-bottom: 0;
+	color: #f21335;
+	font-weight: 600;
+	margin-left: 10px;
+}
+.wrapper .content .description span.colors{
+	display: inline-block;
+	margin-left: 10px;
+	color: #37474f;
+}
+.wrapper .content .cart{ 
+	display: none;
+}
+.wrapper .content .cart i.fa{
+	font-size: 36px;
+	color: #272727;
+} 
+.wrapper .content .cart span.all-price{
+	color: #f21335;
+	font-weight: 600;
+	display: inline-block;
+	font-size: 36px;
+	margin-right: 10px;
+}
+.wrapper .content .cart span.lots{
+	margin:0 10px;
+	display: inline-block;
+	font-size: 16px;
+	color: #536dfe;
+
+}
+.wrapper .content .cart{
+	color: #f21335;
+	font-weight: 600;
+	font-size: 36px;
+}
+#addcart, .wrapper .content .cart i{
+	cursor: pointer;
+}
