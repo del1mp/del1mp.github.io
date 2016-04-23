@@ -113,9 +113,7 @@ section.content .category .fa{
 section.content .category:hover .fa{
 	color: #fcdb00;
 }
-section.content .category:hover h6{
-	color: #fcdb00;
-}
+
 section.content .category p{
 	margin-left: 66px;
 	color: #898989;
@@ -152,7 +150,7 @@ footer .container .row .col-md-10 p{
 	margin-bottom: 40px;
 	font-size: 20px;
 }
-footer .container .row .col-md-10 form input[type="text"]{
+footer .container .row .col-md-10 form input[type="email"]{
 	padding: 20px 0 20px 20px;
 	border-radius: 7px;
 	text-shadow: none;
@@ -176,7 +174,7 @@ footer .container .row .col-md-10 form {
 }
 .btn:hover{
 	background: #fff;
-	color: #fcdb00;
+	color: #010101;
 	border: 2px solid #fcdb00;
 }
 footer .container .row .col-md-10 a:hover{
