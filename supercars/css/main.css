@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700);
+*, body, html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Raleway, sans-serif;
+}
+a, a:hover, a:focus, a:active{
+	text-decoration: none;
+}
+ul, li{
+	list-style: none;
+}
+.btn:focus, .btn, input[type="text"]:focus{
+	outline: none;
+}
+header{
+	background: url(../img/honda-s2000-kolesa-vyhlopnye.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+header .head{
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	 -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+section.models{
+	background: url(../img/2015-land-rover-range-rover-3113.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+.logo{
+    background: url("../img/logo.png");
+    background-size: contain;
+    width: 250px;
+    height: 246px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 4;
+    left: 50%;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+header nav.nav ul li a{
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background: #c3c3c3;
+	margin: 6px;
+	vertical-align: middle;
+}
+header .head p{
+	font-size: 14px;
+}
+header .head h2{
+	margin-bottom: 35px;
+	font-size: 24px;
+}
+a.join{
+	font-weight: 600;
+	margin-top: 30px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 25px;
+	border: 3px solid #fff;
+	display: inline-block;
+	padding: 2px 32px;
+	text-transform: uppercase;
+	-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+a.join:hover{
+	background: #000;
+	border-color: transparent;
+}
+a.joinnow{
+	z-index: 4;
+	position: fixed;
+	right: 1.2%;
+	top: 3%;
+	margin: 0;
+}
+.social{
+	position: fixed;
+	right: 1.2%;
+	bottom: 3%;
+	z-index: 4;
+}
+.social ul li a .fa{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	
+	color: #fff;
+	font-size: 18px;
+	 -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+	
+}
+.social ul li a:hover{
+	background: #000;
+	border-color: #000;
+}
+.social ul li a{
+	margin-top: 5px;
+	display: inline-block;
+	width:  40px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+header .head h1{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 48px;
+	font-weight: 300;
+}
+header .head h1 span{
+	font-size: 1.25em;
+	font-weight: 700;
+	margin: 0;
+}
+header nav.nav ul li{
+	border: 2px solid transparent;
+}
+.grad{
+	background: rgba(0,0,0, 0.7);
+	height: 100vh;
+}
+header nav.nav ul li{
+	position: relative;
+	left: 4px;
+}
+header a.menu{
+	/* text-align: center; */
+	text-align: center;
+	position: fixed;
+	left: 1.2%;
+	z-index: 5;
+	top: 3%;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	/* transform: rotate(90deg); */
+}
+a.menu span{
+	margin: 3px auto;
+	display: block;
+	background: #fff;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+header nav.nav ul li:nth-child(5n+1) a{
+width: 8px;
+height: 8px;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+header nav.nav ul li:nth-child(5n+1){
+	display: inline-block;
+	left: 0;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+header nav.nav ul li:nth-child(5n+1) + span{
+	opacity: 0;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+header nav.nav ul li:nth-child(5n+1):hover {
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+header nav.nav ul li:nth-child(5n+1):hover a{
+	background: #fff;
+}
+header nav.nav ul li:nth-child(5n+1):hover + span{
+	opacity: 1;
+	margin-left: 20px;
+}
+header nav.nav ul{
+	z-index: 2;
+	position: fixed;
+	left: 2%;
+	/*text-align: center;*/
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.navigation{
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background: #000;
+	display: none;
+}
+.navigation ul li a{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.navigation ul li{
+margin-top: 1000px;
+	margin-bottom: 20px;
+		-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+.navigation ul{
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header a.open-menu span{
+	display: block;
+	background: #fff;
+	height: 2px;
+	width: 29px;
+	border-radius: 0;
+	margin-top: 12px;
+}
+header a.open-menu span:first-child{
+	display: none;
+}
+header a.open-menu span:nth-child(2){
+	transform: rotate(0deg);
+	margin-top: 20px;
+}
+
+header a.open-menu span:last-child{
+	transform: rotate(90deg);
+	margin-top: -5px;
+}
+.navigation ul li.anim{
+	margin-top: 0; 
+}
+section.lala{
+	background: url(../img/2015-bmw-750li-xdrive-788.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+header nav.nav ul li.active{
+	border-radius: 50%;
+border: 2px solid #fff;
+}
