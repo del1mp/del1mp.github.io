@@ -22,20 +22,31 @@ header{
 	height: 100vh;
 }
 header .head{
+	-webkit-transition: all 1.0s ease-in-out;
+-moz-transition: all 1.0s ease-in-out;
+-ms-transition: all 1.0s ease-in-out;
+-o-transition: all 1.0s ease-in-out;
+transition: all 1.0s ease-in-out;
 	text-align: center;
 	color: #fff;
 	position: absolute;
-	top: 55%;
+	top: -50%;
 	left: 50%;
 	 -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
 section.models{
+	position: relative;
 	background: url(../img/2015-land-rover-range-rover-3113.jpg) no-repeat center;
 	background-size: cover;
 	height: 100vh;
 }
 .logo{
+	-webkit-transition: all 1.5s ease-in-out;
+-moz-transition: all 1.5s ease-in-out;
+-ms-transition: all 1.5s ease-in-out;
+-o-transition: all 1.5s ease-in-out;
+transition: all 1.5s ease-in-out;
     background: url("../img/logo.png");
     background-size: contain;
     width: 250px;
@@ -46,7 +57,7 @@ section.models{
     z-index: 4;
     left: 50%;
     right: 0;
-    top: 0;
+    top: -50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
@@ -76,7 +87,7 @@ a.join{
 	border-radius: 25px;
 	border: 3px solid #fff;
 	display: inline-block;
-	padding: 2px 32px;
+	padding: 4px 32px;
 	text-transform: uppercase;
 	-webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;
@@ -155,13 +166,18 @@ header a.menu{
 	/* text-align: center; */
 	text-align: center;
 	position: fixed;
-	left: 1.2%;
+	left: -50%;
 	z-index: 5;
 	top: 3%;
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
 	border: 2px solid #fff;
+		-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
 	/* transform: rotate(90deg); */
 }
 a.menu span{
@@ -222,8 +238,12 @@ header nav.nav ul{
 	z-index: 2;
 	position: fixed;
 	left: 2%;
-	/*text-align: center;*/
-	top: 50%;
+-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	top: 150%;
 	-webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -239,11 +259,19 @@ header nav.nav ul{
 	display: none;
 }
 .navigation ul li a{
+	position: relative;
+	display: inline-block;
 	color: #fff;
 	font-size: 24px;
 	font-weight: 500;
 	text-transform: uppercase;
+		-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
 }
+
 .navigation ul li{
 margin-top: 1000px;
 	margin-bottom: 20px;
@@ -262,6 +290,57 @@ margin-top: 1000px;
 	-webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
+.navigation ul li.anim:nth-child(odd) a:after{
+	left: -100%;
+	top: 50%;
+	position: absolute;
+	float: left;
+	content: "";
+	width: 100%;
+	opacity: 0;
+	height: 4px;
+	background: #fff;
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+	-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.navigation ul li.anim a:hover:after{
+	left: 200%;
+	width: 0;
+	opacity: 1;
+}
+.navigation ul li.anim:nth-child(even) a:before{
+	right: -100%;
+	top: 50%;
+	position: absolute;
+	float: right;
+	content: "";
+	width: 100%;
+	height: 4px;
+	opacity: 0;
+	background: #fff;
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+		-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.navigation ul li.anim a:hover:before{
+	right: 200%;
+	width: 0;
+	opacity: 1;
+}
+.navigation ul li.anim a:hover{
+	color: rgba(255,255,255,0.5);
+}
+
+
 header a.open-menu span{
 	display: block;
 	background: #fff;
@@ -292,5 +371,77 @@ section.lala{
 }
 header nav.nav ul li.active{
 	border-radius: 50%;
-border: 2px solid #fff;
+	border: 2px solid #fff;
+}
+header nav.nav ul li + span.active{
+	opacity: 1;
+	margin-left: 20px;
+}
+section.models .ferrari{
+	margin-top: 550px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	 -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models .ferrari p{
+	font-size: 14px;
+}
+section.models .ferrari h5{
+	margin-bottom: 35px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+section.models .ferrari h6{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+section.models .ferrari a.next-lot, section.models .ferrari a.prev-lot{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+			-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+section.models .ferrari a.next-lot, section.models .ferrari a.prev-lot .fa{
+	line-height: 24px;
+	vertical-align: sub;
+	color: #fff;
+	font-size: 24px;
+}
+section.models .ferrari a.next-lot:hover, section.models .ferrari a.prev-lot:hover{
+background: #000;
+	border-color: transparent;
+}
+section.models .ferrari .book{
+	display: block;
+	width: 150.3px;
+	margin-top: 90px;
+	left: 50%;
+	position: relative;
+	-webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #fff;
+    color: #000;
+}
+section.models .ferrari .book:hover{
+	background: #000;
+	color: #fff;
 }
