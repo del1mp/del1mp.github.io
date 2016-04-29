@@ -35,11 +35,41 @@ transition: all 1.0s ease-in-out;
 	 -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-section.models{
+section.models .bg-ferrari{
 	position: relative;
 	background: url(../img/2015-land-rover-range-rover-3113.jpg) no-repeat center;
 	background-size: cover;
 	height: 100vh;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models .bg-macan{
+	position: relative;
+	background: url(../img/porsche_macan_1280x1024.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models .bg-audi{
+	position: relative;
+	background: url(../img/audi-q7-02.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
 }
 .logo{
 	-webkit-transition: all 1.5s ease-in-out;
@@ -102,9 +132,14 @@ a.join:hover{
 a.joinnow{
 	z-index: 4;
 	position: fixed;
-	right: 1.2%;
+	right: -50%;
 	top: 3%;
 	margin: 0;
+	-webkit-transition: all .8s ease-in-out;
+-moz-transition: all .8s ease-in-out;
+-ms-transition: all .8s ease-in-out;
+-o-transition: all .8s ease-in-out;
+transition: all .8s ease-in-out;
 }
 .social{
 	position: fixed;
@@ -155,7 +190,7 @@ header nav.nav ul li{
 	border: 2px solid transparent;
 }
 .grad{
-	background: rgba(0,0,0, 0.7);
+	background: rgba(0,0,0, 0.5);
 	height: 100vh;
 }
 header nav.nav ul li{
@@ -249,7 +284,7 @@ header nav.nav ul{
 }
 .navigation{
 	position: fixed;
-	z-index: 3;
+	z-index: 5;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -365,8 +400,8 @@ header a.open-menu span:last-child{
 	margin-top: 0; 
 }
 section.lala{
-	background: url(../img/2015-bmw-750li-xdrive-788.jpg) no-repeat center;
-	background-size: cover;
+	/*background: url(../img/2015-bmw-750li-xdrive-788.jpg) no-repeat center;
+	background-size: cover;*/
 	height: 100vh;
 }
 header nav.nav ul li.active{
@@ -392,23 +427,62 @@ section.models .ferrari{
 	-o-transition: all .8s ease-in-out;
 	transition: all .8s ease-in-out;
 }
-section.models .ferrari p{
+section.models .bg-rolls{
+	position: relative;
+	background: url(../img/rolls.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models .bg-mercedes{
+	position: relative;
+	background: url(../img/mercedes-benz_gl_550_amg_sports_package_3.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models .bg-vaz{
+	position: relative;
+	background: url(../img/vaz-2101-11.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	  -webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-ms-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+section.models  p{
 	font-size: 14px;
 }
-section.models .ferrari h5{
+section.models  h5{
 	margin-bottom: 35px;
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 300;
 }
-section.models .ferrari h6{
+section.models  h6{
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 48px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-section.models .ferrari a.next-lot, section.models .ferrari a.prev-lot{
+section.models  a.next-lot, section.models  a.prev-lot{
 	display: inline-block;
 	width: 32px;
 	height: 32px;
@@ -420,17 +494,17 @@ section.models .ferrari a.next-lot, section.models .ferrari a.prev-lot{
 -o-transition: all .5s ease-in-out;
 transition: all .5s ease-in-out;
 }
-section.models .ferrari a.next-lot, section.models .ferrari a.prev-lot .fa{
+section.models  a.next-lot, section.models  a.prev-lot .fa{
 	line-height: 24px;
 	vertical-align: sub;
 	color: #fff;
 	font-size: 24px;
 }
-section.models .ferrari a.next-lot:hover, section.models .ferrari a.prev-lot:hover{
+section.models  a.next-lot:hover, section.models  a.prev-lot:hover{
 background: #000;
 	border-color: transparent;
 }
-section.models .ferrari .book{
+section.models  .book{
 	display: block;
 	width: 150.3px;
 	margin-top: 90px;
@@ -441,7 +515,76 @@ section.models .ferrari .book{
     background: #fff;
     color: #000;
 }
-section.models .ferrari .book:hover{
+section.models  .book:hover{
 	background: #000;
 	color: #fff;
 }
+section.models .item .ferrari{
+	left: 100%;
+	opacity: 0;
+	width: 50%;
+	-moz-transition: all .8s ease-in-out;
+-ms-transition: all .8s ease-in-out;
+-o-transition: all .8s ease-in-out;
+transition: all .8s ease-in-out;
+}
+section.models .active .ferrari{
+	left: 50%;
+	opacity: 1;
+}
+section.models .item .ferrari a.prev-lot{
+		-moz-transition: all 1.6s ease-in-out;
+-ms-transition: all 1.6s ease-in-out;
+-o-transition: all 1.6s ease-in-out;
+transition: all 1.6s ease-in-out;
+margin-left: 50%;
+}
+section.models .active .ferrari a.prev-lot{
+	margin-left: 0;
+}
+section.lala ul li a img{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	vertical-align: top;
+-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+section.lala ul li{
+	/*width: 20%;*/
+	display: inline-block;
+}
+section.lala ul {
+	margin: 0;
+}
+section.lala ul li a{
+	display: block;
+	position: relative;
+}
+section.lala ul li a span{
+	z-index: 1;
+	display: block;
+	position: absolute;
+	background: #000;
+	opacity: 0.5;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+		-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+section.lala ul li a:hover span{
+ opacity: 0;
+}
+section.lala ul li a:hover img{
+	transform: scaleX(1.1);
+	z-index: 2;
+}
+
+
+

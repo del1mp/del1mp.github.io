@@ -1,11 +1,17 @@
 $(document).ready(function(){
+  var widthli = document.getElementById('models').childNodes.length;
+  var lengthli = 100/widthli;
+  console.log(lengthli);
+  $('#models li').css('width', lengthli+'%')
+ 
+
   $('header .head').css('top', '55%');
   $('header .logo').css('top', '0');
   $('header a.menu').css('left', '1.2%');
+  $('header a.joinnow').css('right', '1.2%');
   $('header nav.nav ul').css('top', '50%');
   var scroll=parseInt($('body').scrollTop());
             var height=parseInt(window.innerHeight);
-            console.log(height, scroll);
             if (height/1.5>scroll) {
               $("#home").parent('li').addClass('active');
               $("#home").parent('li').siblings('span.home').addClass('active');
@@ -74,7 +80,6 @@ $("body,html").animate({"scrollTop":heightheader},scrollTime);
  $(document).scroll(function(){
             var scroll=parseInt($('body').scrollTop());
             var height=parseInt(window.innerHeight);
-            console.log(height, scroll);
             if (height/1.5>scroll) {
               $("#home").parent('li').addClass('active');
               $("#home").parent('li').siblings('span.home').addClass('active');
