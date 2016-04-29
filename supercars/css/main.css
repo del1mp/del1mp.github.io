@@ -532,14 +532,55 @@ section.models .active .ferrari{
 	left: 50%;
 	opacity: 1;
 }
+
+section.models .item .ferrari h6{
+		-moz-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+margin-left: 50%;
+}
+section.models .active .ferrari h6{
+	margin-left: 0;
+}
+section.models .item .ferrari h5{
+		-moz-transition: all 1.0s ease-in-out;
+-ms-transition: all 1.0s ease-in-out;
+-o-transition: all 1.0s ease-in-out;
+transition: all 1.0s ease-in-out;
+margin-left: 100%;
+}
+section.models .active .ferrari h5{
+	margin-left: 0;
+}
+section.models .item .ferrari p{
+		-moz-transition: all 1.5s ease-in-out;
+-ms-transition: all 1.5s ease-in-out;
+-o-transition: all 1.5s ease-in-out;
+transition: all 1.5s ease-in-out;
+margin-left: 70%;
+}
+section.models .active .ferrari p{
+	margin-left: 0;
+}
 section.models .item .ferrari a.prev-lot{
-		-moz-transition: all 1.6s ease-in-out;
--ms-transition: all 1.6s ease-in-out;
--o-transition: all 1.6s ease-in-out;
-transition: all 1.6s ease-in-out;
+		-moz-transition: all 2.0s ease-in-out;
+-ms-transition: all 2.0s ease-in-out;
+-o-transition: all 2.0s ease-in-out;
+transition: all 2.0s ease-in-out;
 margin-left: 50%;
 }
 section.models .active .ferrari a.prev-lot{
+	margin-left: 0;
+}
+section.models .item .ferrari a.book{
+		-moz-transition: all 2.0s ease-in-out;
+-ms-transition: all 2.0s ease-in-out;
+-o-transition: all 2.0s ease-in-out;
+transition: all 2.0s ease-in-out;
+margin-left: 100%;
+}
+section.models .active .ferrari a.book{
 	margin-left: 0;
 }
 section.lala ul li a img{
