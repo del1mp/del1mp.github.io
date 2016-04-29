@@ -67,6 +67,7 @@ $("#home").click(function(e){
 //Необходимо прокрутить в начало страницы
 var curPos=$(document).scrollTop();
 var scrollTime=curPos/1.2;
+console.log(scrollTime);
 $("body,html").animate({"scrollTop":0},scrollTime);
 });
 
@@ -188,3 +189,7 @@ $("body,html").animate({"scrollTop":heightheader},scrollTime);
             }
 
         })
+
+document.onmousewheel = function (e) {
+  e.preventDefault();
+}

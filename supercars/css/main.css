@@ -285,7 +285,7 @@ header nav.nav ul{
 }
 .navigation{
 	position: fixed;
-	z-index: 5;
+	z-index: 10;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -772,4 +772,8 @@ transition: all .7s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
+}
+ html { 
+ 	overflow-x: hidden; 
+overflow-y: hidden;  
 }
