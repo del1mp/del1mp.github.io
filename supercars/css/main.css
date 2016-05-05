@@ -14,6 +14,14 @@ a, a:hover, a:focus, a:active{
 ul, li{
 	list-style: none;
 }
+.bgvideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
 .btn:focus, .btn, input[type="text"]:focus{
 	outline: none;
 }
@@ -621,7 +629,9 @@ section.lala ul li:hover{
 section.lala ul li:hover img{
 	-webkit-filter: grayscale(0%); 
 	margin-left: 24px;
+
 }
+
 section.lala ul li:last-child:hover{
 	width: 20.22% !important;
 	transform:translateX(0%);
