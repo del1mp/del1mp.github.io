@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	overflow: hidden;
+
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper{
+	height: 100vh;
+	background: url(../ios-8-wp.jpg) no-repeat left top;
+	background-size: cover; 
+}
+a.open{
+background: transparent;
+	display: inline-block;
+	
+}
+a.open img{
+		-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+		width: 30px;
+	height: 30px;
+	
+}
+ul li img{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+}
+.icons{
+	display: block;
+	position: absolute;
+	right: 8%;
+	bottom: 10%;
+}
+ul{
+	position: absolute;
+	left: 2000%;
+	margin-bottom: 100px;
+	-webkit-transition: all 1.0s ease-in-out;
+	-moz-transition: all 1.0s ease-in-out;
+	-ms-transition: all 1.0s ease-in-out;
+	-o-transition: all 1.0s ease-in-out;
+	transition: all 1.0s ease-in-out;
+}
+ul.active{
+	left: 0;
+}
+ul.active li:nth-child(10) a{ 
+ margin-left: 0;
+ -webkit-transition: all 1.1s ease-in-out;
+	-moz-transition: all 1.1s ease-in-out;
+	-ms-transition: all 1.1s ease-in-out;
+	-o-transition: all 1.1s ease-in-out;
+	transition: all 1.1s ease-in-out;
+ }
+ul li:nth-child(10) a{
+	margin-left: 1000%;
+	-webkit-transition: all 1.1s ease-in-out;
+	-moz-transition: all 1.1s ease-in-out;
+	-ms-transition: all 1.1s ease-in-out;
+	-o-transition: all 1.1s ease-in-out;
+	transition: all 1.1s ease-in-out;
+}
+ul.active li:nth-child(11) a{ 
+ margin-left: 0;
+ -webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	transition: all 1.3s ease-in-out;
+ }
+ul li:nth-child(11) a{
+	margin-left: 1000%;
+	-webkit-transition: all 1.3s ease-in-out;
+	-moz-transition: all 1.3s ease-in-out;
+	-ms-transition: all 1.3s ease-in-out;
+	-o-transition: all 1.3s ease-in-out;
+	transition: all 1.3s ease-in-out;
+}
+ul.active li:nth-child(12) a{ 
+ margin-left: 0;
+ -webkit-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+	-ms-transition: all 1.5s ease-in-out;
+	-o-transition: all 1.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
+ }
+ul li:nth-child(12) a{
+	margin-left: 1000%;
+	-webkit-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+	-ms-transition: all 1.5s ease-in-out;
+	-o-transition: all 1.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
+}
+ul.active li:nth-child(13) a{ 
+ margin-left: 0;
+ -webkit-transition: all 1.7s ease-in-out;
+	-moz-transition: all 1.7s ease-in-out;
+	-ms-transition: all 1.7s ease-in-out;
+	-o-transition: all 1.7s ease-in-out;
+	transition: all 1.7s ease-in-out;
+ }
+ul li:nth-child(13) a{
+	margin-left: 1000%;
+	-webkit-transition: all 1.7s ease-in-out;
+	-moz-transition: all 1.7s ease-in-out;
+	-ms-transition: all 1.7s ease-in-out;
+	-o-transition: all 1.7s ease-in-out;
+	transition: all 1.7s ease-in-out;
+}
+ul.active li:nth-child(14) a{ 
+ margin-left: 0;
+ -webkit-transition: all 1.9s ease-in-out;
+	-moz-transition: all 1.9s ease-in-out;
+	-ms-transition: all 1.9s ease-in-out;
+	-o-transition: all 1.9s ease-in-out;
+	transition: all 1.9s ease-in-out;
+ }
+ul li:nth-child(14) a{
+	margin-left: 1000%;
+	-webkit-transition: all 1.9s ease-in-out;
+	-moz-transition: all 1.9s ease-in-out;
+	-ms-transition: all 1.9s ease-in-out;
+	-o-transition: all 1.9s ease-in-out;
+	transition: all 1.9s ease-in-out;
+}
+li{
+
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	list-style: none;
+}
+.icons ul li a{
+	border-radius: 10px;
+	text-align: center;
+	display: inline-block;
+	background: rgba(255,255,255,0);
+	width: 60px;
+	height: 60px;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.icons ul li a:hover{
+	background: rgba(255,255,255,0.3);
+}
