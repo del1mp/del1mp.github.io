@@ -10,90 +10,39 @@ for (var i = 0; i < divs.length; i++) {
 
     angle += delta;
 }
- // $('.icons ul').bind('DOMMouseScroll', function(e){
- //     if(e.originalEvent.detail > 0) {
- //        $('ul li').each(function(){
- //        var posl = $(this).position().left;
- //        var post = $(this).position().top;
- //        $(this).prev('li').css({'left': posl,
- //                                'top': post,                 
- //        });
- //        var posll = $('ul li').first().position().left;
- //        var postl = $('ul li').first().position().top;
- //        $('ul li').last().css({'left': posll,
- //                                'top': postl,                 
- //        });
- //        });
- //     }
- //     else {
- //        $('ul li').each(function(){
- //        var posl = $(this).position().left;
- //        var post = $(this).position().top;
- //        $(this).next('li').css({'left': posl,
- //                                'top': post,                 
- //        });
- //        var posll = $('ul li').last().position().left;
- //        var postl = $('ul li').last().position().top;
- //        $('ul li').first().css({'left': posll,
- //                                'top': postl,                 
- //        });
- //        });
- //     }
- //     return false;
- // });
- // $('.icons ul').bind('mousewheel', function(e){
- //     if(e.originalEvent.wheelDelta < 0) {
- //        $('ul li').each(function(){
- //        var posl = $(this).position().left;
- //        var post = $(this).position().top;
- //        $(this).prev('li').css({'left': posl,
- //                                'top': post,                 
- //        });
- //        var posll = $('ul li').first().position().left;
- //        var postl = $('ul li').first().position().top;
- //        $('ul li').last().css({'left': posll,
- //                                'top': postl,                 
- //        });
- //        });
-
- //     }
- //     else {
- //        $('ul li').each(function(){
- //        var posl = $(this).position().left;
- //        var post = $(this).position().top;
- //        $(this).next('li').css({'left': posl,
- //                                'top': post,                 
- //          });
- //        var posll = $('ul li').last().position().left;
- //        var postl = $('ul li').last().position().top;
- //        $('ul li').first().css({'left': posll,
- //                                'top': postl,                 
- //        });
- //        }); 
- //     }
- //     return false;
- // });
-$("ul li").click(function(e){
-  $('ul li').each(function(){
-var posl = $(this).position().left;
-var post = $(this).position().top;
-$(this).prev('li').css({'left': posl,
-                        'top': post,                 
-  });
-var posll = $('ul li').first().position().left;
-var postl = $('ul li').first().position().top;
-$('ul li').last().css({'left': posll,
-                        'top': postl,                 
-  });
+ $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
-});
-
-
-
- $("a.open").click(function(e){
-         e.preventDefault();
-    $(this).siblings('ul').toggleClass('active');
-    $(this).children('img').css('transform',"rotate(60deg)")
-    });
-});
-
+  
