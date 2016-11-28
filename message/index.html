@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Message</title>
+</head>
+<body>
+<style>
+.link{
+	text-align: center;
+	margin-bottom: 28px;
+}
+.link_academy{
+	display: inline-block;
+	background-color: #358869;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+		padding: 16px 34px;
+}
+.link_academy:hover{
+	opacity: 0.8;
+}
+.registration_steps {
+  display: block;
+  margin: 0px auto;
+  border-left: 12px solid #efb638;
+  counter-reset: steps; }
+  @media (min-width: 768px) {
+    .registration_steps {
+      border-left: none;
+      border-top: 12px solid #efb638; } }
+  .registration_steps:before, .registration_steps:after {
+    content: " ";
+    display: table; }
+  .registration_steps:after {
+    clear: both; }
+  .registration_steps .step-wrap {
+  	box-sizing: border-box;
+  	display: inline-block;
+  	width: 25%;
+  	vertical-align: top;
+    padding: 0 15px 0 0;
+    position: relative; }
+
+    .registration_steps .step-wrap:before {
+      content: '';
+      width: 2px;
+      height: 243px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      @media (min-width: 768px) {
+        .registration_steps .step-wrap:before {
+          background-color: #efb638; } }
+    .registration_steps .step-wrap:last-child {
+      padding-right: 0; }
+    .registration_steps .step-wrap .step_logo {
+    	font-family: Arial, sans-serif;
+      height: 160px;
+      display: block;
+      background-color: #f1f1f1; }
+      .registration_steps .step-wrap .step_logo img {
+        position: relative;
+        max-height: 70%;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .registration_steps .step-wrap .step-info {
+      padding-left: 35px;
+      padding-top: 25px; }
+    .registration_steps .step-wrap .step-headline {
+      display: block;
+      color: #414141;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      position: relative; }
+      .registration_steps .step-wrap .step-headline:before {
+      	font-family: Arial, sans-serif;
+        content: '';
+        width: 20px;
+        height: 2px;
+        background-color: #efb638;
+        position: absolute;
+        left: -35px;
+        top: 3px;
+        bottom: 0;
+        margin: auto; }
+      .registration_steps .step-wrap .step-headline:after {
+        counter-increment: steps;
+        content: counter(steps);
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACRUlEQVRIS7WWT2gTQRTGvzdJWluJ2DYJUizSg3gTtKBgssU/1GSVoCJW8SKiB8F7KR5ExEvP3ixIQHqxl6iQbIqKxE2LUPSg4EEQpK2p2Q3SXiokmSfbpGl0Y2J1d2478773m4+deW8IbcbXZ0Pd3o7ua4L5EgMHAWwDsAJgnsBJ4el61Dvy3Pr+46BWi8WZIyelFA8A7GkR9x3gu4HV/vs0Ol1pFtcUwo8veAx//h4Rxts5ra8zclSuXAzE55Z+19ggn1JqZ49YnWLQ+b8GbAQSliploe46nX3fqP0FwvNDPtPsegogtmXApsD0kDzWG539sMluyFZIKwkivvIfgA3pIkCHgrHXeWui7sTQlOsATzoAqKZgfhl4kxuhO5DrkGJmeECy/Ahgu2OQqoPxQEyfWIeYWuQhA1edBNRy/RDSu5eKqaO7pSh/ASBcgIDACTI1ZYzBE24AajmXyUiHX4DouIuQFTK0SAFA0EUILAi7CQCQtyBWUXPlp9cuzG0L8hnAoEtuFkultX3kYCmx7ZMZoyFVn6ZvM0pYSNadd8LvgrGc1eSqtcvQIikAqpMgJj4ViubSdchyZnjQw/ItgJ0OgZLBmH7OVuqNTCQORtKBk5Yvlbz7++OvzKb9xNDClwFKAPD9kyPCmpDyRJ86O9eot7XfghZWCDQFYGArIAYVwXw2pOq2Q9T0IWE8Cfu5g24R4SYAf1sYUUqAbvRFswvNYls/iVKHd7DwnQEhzkwHALbcdQKoEHiBCTrDMxmKZrOtNvITyxLEALkL07QAAAAASUVORK5CYII=);
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -29px;
+        text-align: center;
+        color: white;
+        font-size: 20px; }
+    .registration_steps .step-wrap .step-description {
+      margin-top: 13px;
+      color: #404040;
+     font-family: Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 21px;
+      margin-bottom: 40px; }
+      .registration_steps .step-wrap .step-description p {
+        margin-bottom: 0;
+        font-size: 10px; }
+	.container{
+		max-width: 600px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+		font-style: bold;
+		color: #2b2c2b;
+	}
+	header img{
+		width: 100%;
+	}	
+	header h2{
+		font-size: 18px;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 20px;
+		color: #2b2c2b;
+	}
+	header p{
+		text-align: center;
+		font-size: 13px;
+		color: #2b2c2b;
+	}
+	header{
+		margin-bottom: 35px;
+	}
+	footer{
+		padding-top: 25px;
+		border-top: 1px solid #2b2c2b;
+		padding-bottom: 94px;
+	}
+	footer h2{
+		text-align: center;
+		font-size: 19px;
+		margin: 0;
+	}
+</style>
+	<div class="container">
+		<header>
+			<img src="img/Layer-2.jpg" alt="">
+			<h2>Привет, будущий студент нашей академии!</h2>
+			<p>Пока ты читаешь этот автоматический ответ, мы тем временем прыгаем от счастья, что ты выбрал(-а) наш курс. Мы чувствуем себя особенными!</p>
+
+			<p>Хотя это письмо было отправлено бездушной машиной, нам бы не хотелось, чтобы ты ощущал(-а) недостаток человеческого тепла и внимания. Ты можешь не сомневаться, что наши сердца наполнились радостью, когда мы увидели твою регистрацию. Мы свяжемся с тобой очень скоро и предложим выполнить тестовое задание, а позже - прийти к нам на собеседование.</p>
+		</header>
+		<div class="steps">
+			<div class="registration_steps" id="registration">
+				<div class="step-wrap">
+					<div class="step_logo">
+						<img src="http://projects.beetroot.se/internal/academy/wp-content/uploads/2016/08/vector-smart-object.png" alt="Registration Step" />
+					</div>
+						<div class="step-info">
+						<span class="step-headline">Регистрация</span>
+						<div class="step-description"><p>на сайте<br />
+						<a href="http://lms.beetroot.se" target="_blank">http://lms.beetroot.se</a></p>
+					</div>
+					</div>
+					</div><div class="step-wrap">
+											<div class="step_logo">
+												<img src="http://projects.beetroot.se/internal/academy/wp-content/uploads/2016/08/test.png" alt="Registration Step" />
+											</div>
+											<div class="step-info">
+												<span class="step-headline">Тестирование</span>
+												<div class="step-description"><div id="gt-src-c" class="g-unit">
+<div id="gt-src-p">
+<div id="gt-src-wrap" class=""><span class="">определение</span> порога вхождения <span class="">студента</span> <span class="">в</span> <span class="">группу</span></div>
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+											</div>
+										</div><div class="step-wrap">
+											<div class="step_logo">
+												<img src="http://projects.beetroot.se/internal/academy/wp-content/uploads/2016/08/dialoguebulb.png" alt="Registration Step" />
+											</div>
+											<div class="step-info">
+												<span class="step-headline">Собеседование</span>
+												<div class="step-description"><p>определение уровня мотивации студентов</p>
+<p>&nbsp;</p>
+</div>
+											</div>
+										</div><div class="step-wrap">
+											<div class="step_logo">
+												<img src="http://projects.beetroot.se/internal/academy/wp-content/uploads/2016/08/approvalseal.png" alt="Registration Step" />
+											</div>
+											<div class="step-info">
+												<span class="step-headline">Зачисление</span>
+												<div class="step-description"><p>формирование группы студентов максимально похожих по уровню знаний и <span class="">стремлением</span> получить <span class="">профессию</span></p>
+</div>
+											</div>
+										</div>
+																	</div>
+										<div class="link"><a target="_blank" class="link_academy" href="http://projects.beetroot.se/internal/academy/">Перейти на анш сайт</a></div>
+		</div>
+		<footer>
+			<h2>Желаем удачи и надеемся увидеть тебя среди наших фантастических студентов!</h2>
+		</footer>
+	</div>
+</body>
+</html>
