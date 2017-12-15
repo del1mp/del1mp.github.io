@@ -1,0 +1,75 @@
+body,* {
+	box-sizing: border-box;
+	margin: 0;
+}
+.clearfix {
+	clear: both;
+}
+.table {
+	height: 100vh;
+	background: url(../images/table.jpg) no-repeat left top;
+	background-size: cover;
+}
+.table .checkers {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(7deg);
+	width: 40%;
+	background: url(../images/back.jpg) no-repeat left top;
+	background-size: cover;
+	padding: 30px;
+}
+.table .checkers > div{
+	border: 4px solid #000;
+}
+.table .checkers .item {
+	width: 12.5%;
+	display: inline-block;
+	float: left;
+	position: relative;
+	opacity: .9;
+}
+.table .checkers .item:after {
+	content: "";
+	padding-bottom: 100%;
+	float: left;
+}
+.table .checkers .items:nth-child(odd) .item:nth-child(odd){
+	background: url(../images/item.jpg) no-repeat left top;
+}
+.table .checkers .items:nth-child(even) .item:nth-child(even){
+	background: url(../images/item.jpg) no-repeat left top;
+}
+.table .checkers .items:nth-last-child(-2n + 3) .item:nth-child(even):before ,.table .checkers .items:nth-last-child(-2n + 4) .item:nth-child(odd):before{
+	content: "";
+	width: 90%;
+	height: 90%;
+	display: inline-block;
+	background: url(../images/white.png) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	cursor: pointer;
+}
+.table .checkers .items:nth-child(-2n + 3) .item:nth-child(even):before,.table .checkers .items:nth-child(-2n + 2) .item:nth-child(odd):before{
+	content: "";
+	width: 90%;
+	height: 90%;
+	display: block;
+	background: url(../images/black.png) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	cursor: pointer;
+}
+.table .checkers .items:nth-child(-2n + 3) .item:nth-child(even):hover,.table .checkers .items:nth-child(-2n + 2) .item:nth-child(odd):hover,.table .checkers .items:nth-last-child(-2n + 3) .item:nth-child(even):hover ,.table .checkers .items:nth-last-child(-2n + 4) .item:nth-child(odd):hover{
+   transform: scale(1.1);
+   opacity: 1;
+}
