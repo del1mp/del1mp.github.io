@@ -1,0 +1,6 @@
+deploy.php
+wp-config.php
+dumpdb.sh
+wp-snapshots
+updatedb.sh
+config.json
